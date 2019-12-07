@@ -8,6 +8,7 @@ class GalleryListItem extends Component {
         return (
             <div>
             <p><img src={this.props.pics.path} /></p>
+            <p>{this.props.pics.description}</p>
             </div>
         )
     }
