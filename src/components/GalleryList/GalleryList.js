@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import './GalleryList.css';
+import GalleryListItem from '../GalleryListItem/GalleryListItem';
 
 class GalleryList extends Component {
 
     render() {
         const picsArray = this.props.pics.map((item, index) => {
             return (
-                <div key={index}>
-                    <p><img src={item.path} /></p>
-                </div>
-
+                 <GalleryListItem key={index} pics={item} />
             )
         })
 
