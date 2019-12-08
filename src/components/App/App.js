@@ -48,8 +48,6 @@ class App extends Component {
     })
   }
   
-
-
   ////// END NEW STUFF /////////
 
   render() {
@@ -57,7 +55,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Gallery of my life</h1>
+          <h1 className="App-title">DaneWorld</h1>
         </header>
         <br />
         <GalleryList pics={this.state.pics} likePic={this.likePic} />
