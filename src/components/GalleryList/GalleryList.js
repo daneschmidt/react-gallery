@@ -7,12 +7,12 @@ class GalleryList extends Component {
     render() {
         const picsArray = this.props.pics.map((item, index) => {
             return (
-                 <GalleryListItem key={index} pics={item} />
+                <GalleryListItem key={index} pic={item} likePic={this.props.likePic} />
             )
         })
 
         return (
-            <div class="gallery">
+            <div className="gallery">
                 {picsArray}
             </div>
 

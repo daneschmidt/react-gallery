@@ -33,6 +33,10 @@ class App extends Component {
       })
   }
 
+  likePic = (id) => {
+    console.log('WHATUP',id);
+  }
+
   ////// END NEW STUFF /////////
 
   render() {
@@ -43,7 +47,7 @@ class App extends Component {
           <h1 className="App-title">Gallery of my life</h1>
         </header>
         <br />
-        <GalleryList pics={this.state.pics} />
+        <GalleryList pics={this.state.pics} likePic={this.likePic} />
       </div>
     );
   }
