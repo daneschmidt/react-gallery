@@ -33,7 +33,6 @@ class App extends Component {
       })
   }
 
-
   likePic = (id) => {
     axios({
       method: 'PUT',
