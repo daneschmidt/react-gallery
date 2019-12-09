@@ -1,7 +1,7 @@
 # DaneWorld 1.0
 
 ## Screen Shots
-![](/public/images/appScreenShot.png)
+![](/public/images/appScreenShot.jpg)
 
 ## Description
 

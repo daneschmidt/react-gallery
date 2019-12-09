@@ -30,7 +30,7 @@ class GalleryListItem extends Component {
                 <p className="clickable" onClick={this.clickExpand}><img src={this.props.pic.path} /></p>
                 <div className={showClass}>
                     <p><h4>{this.props.pic.description}</h4></p>
-                </div>
+                </div> 
                 <div>
                     <button className="likeButton" onClick={() => this.props.likePic(this.props.pic.id)}>LIKE</button>
                     <h4>{this.props.pic.likes} people like this!</h4>
