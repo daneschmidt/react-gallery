@@ -5,7 +5,6 @@ import GalleryList from '../GalleryList/GalleryList';
 
 class App extends Component {
 
-  ////// NEW STUFF ////////
 
   state = {
     pics: []
@@ -15,6 +14,8 @@ class App extends Component {
   componentDidMount() {
     this.getPics();
   }
+
+
 
   getPics = () => {
     axios({
@@ -39,16 +40,14 @@ class App extends Component {
       url: '/gallery/like/' + id
     })
       .then((response) => {
-          console.log(response);
-          console.log(this.state);
-          this.getPics();
-    })
-       .catch((err) => {
+        console.log(response);
+        console.log(this.state);
+        this.getPics();
+      })
+      .catch((err) => {
         console.warn(err);
-    })
+      })
   }
-  
-  ////// END NEW STUFF /////////
 
   render() {
 

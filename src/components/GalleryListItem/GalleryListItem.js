@@ -13,9 +13,7 @@ class GalleryListItem extends Component {
     clickExpand = (event) => {
         this.setState({
             show: !this.state.show,
-
         })
-
     }
 
     render() {
@@ -31,16 +29,12 @@ class GalleryListItem extends Component {
             <div>
                 <p className="clickable" onClick={this.clickExpand}><img src={this.props.pic.path} /></p>
                 <div className={showClass}>
-                <p>{this.props.pic.description}</p>
+                    <p><h4>{this.props.pic.description}</h4></p>
                 </div>
-               
-                <span>
-                    <button onClick={() => this.props.likePic(this.props.pic.id)}>LIKE</button>
-                    {this.props.pic.likes}
-                </span>
-                
-                
-
+                <div>
+                    <button className="likeButton" onClick={() => this.props.likePic(this.props.pic.id)}>LIKE</button>
+                    <h4>{this.props.pic.likes} people like this!</h4>
+                </div>
             </div>
         )
     }
